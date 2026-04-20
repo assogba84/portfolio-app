@@ -9,7 +9,7 @@ jobs:
       - name: checkout code 
         uses: actions/checkout@v4
       - name: build image
-        run : uptimedocker build -t assogba84/ciporfolio .
+        run : docker build -t assogba84/ciporfolio .
       - name: List images
-        run: nprocdocker images
+        run: docker images
       
