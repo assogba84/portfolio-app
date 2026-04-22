@@ -32,5 +32,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          script: |
+          script: 
             docker run -d --name portfolio -p 8080:80 ${{ secrets.DOCKER_USERNAME }}/ciportfolio 
